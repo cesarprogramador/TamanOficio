@@ -1,0 +1,15 @@
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.ABMCuotas.resources
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.ABMEmpleados.resources
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.ABMGastos.resources
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.ABMInscripcionCursos.resources
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.ABMProfesores.resources
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.ABMSocios.resources
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.Login.resources
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.Principal.resources
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.Properties.Resources.resources
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.csproj.GenerateResource.Cache
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\bin\Debug\TamanOficio.exe.config
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\bin\Debug\TamanOficio.exe
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\bin\Debug\TamanOficio.pdb
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.exe
+D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.pdb
