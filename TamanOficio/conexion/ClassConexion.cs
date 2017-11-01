@@ -25,7 +25,7 @@ namespace TamanOficio.conexion
             _builder.Server = "localhost";
             _builder.UserID = "root";
             _builder.Password = "root";
-            _builder.Database = "dbatpgym";
+            _builder.Database = "dbtamanoficio";
         }
 
         public DataSet AcccionSobreBaseDatos(string _sql,string _tabla)
