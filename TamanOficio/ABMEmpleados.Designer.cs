@@ -30,6 +30,8 @@
         {
             this.gbxBuscador = new System.Windows.Forms.GroupBox();
             this.dgvEmpleados = new System.Windows.Forms.DataGridView();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.cbBusPuntos = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cbBusEmpleadoTipo = new System.Windows.Forms.ComboBox();
@@ -43,6 +45,7 @@
             this.gbxDetalle = new System.Windows.Forms.GroupBox();
             this.gbxDetalleOperaciones = new System.Windows.Forms.GroupBox();
             this.dgvOperaciones = new System.Windows.Forms.DataGridView();
+            this.pbxFoto = new System.Windows.Forms.PictureBox();
             this.txtDpto = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.txtPiso = new System.Windows.Forms.TextBox();
@@ -79,17 +82,14 @@
             this.gbxConfirmarAccion = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.pbxFoto = new System.Windows.Forms.PictureBox();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.gbxBuscador.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.gbxDetalle.SuspendLayout();
             this.gbxDetalleOperaciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOperaciones)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).BeginInit();
             this.gbxAcciones.SuspendLayout();
             this.gbxConfirmarAccion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // gbxBuscador
@@ -127,6 +127,34 @@
             this.dgvEmpleados.TabIndex = 12;
             this.dgvEmpleados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmpleados_CellClick);
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLimpiar.Image = global::TamanOficio.Properties.Resources.Refresh;
+            this.btnLimpiar.Location = new System.Drawing.Point(169, 155);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(86, 42);
+            this.btnLimpiar.TabIndex = 11;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnBuscar.Image = global::TamanOficio.Properties.Resources.Search;
+            this.btnBuscar.Location = new System.Drawing.Point(51, 155);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(86, 42);
+            this.btnBuscar.TabIndex = 10;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // cbBusPuntos
             // 
             this.cbBusPuntos.FormattingEnabled = true;
@@ -138,11 +166,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(50, 126);
+            this.label5.Location = new System.Drawing.Point(56, 125);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Punto:";
+            this.label5.Text = "Aula:";
             // 
             // cbBusEmpleadoTipo
             // 
@@ -269,6 +297,20 @@
             this.dgvOperaciones.ReadOnly = true;
             this.dgvOperaciones.Size = new System.Drawing.Size(524, 160);
             this.dgvOperaciones.TabIndex = 13;
+            // 
+            // pbxFoto
+            // 
+            this.pbxFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbxFoto.ErrorImage = null;
+            this.pbxFoto.Image = global::TamanOficio.Properties.Resources.check_user_icon;
+            this.pbxFoto.InitialImage = null;
+            this.pbxFoto.Location = new System.Drawing.Point(412, 19);
+            this.pbxFoto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbxFoto.Name = "pbxFoto";
+            this.pbxFoto.Size = new System.Drawing.Size(164, 157);
+            this.pbxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxFoto.TabIndex = 29;
+            this.pbxFoto.TabStop = false;
             // 
             // txtDpto
             // 
@@ -425,11 +467,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(359, 268);
+            this.label6.Location = new System.Drawing.Point(367, 268);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Punto:";
+            this.label6.Text = "Aula:";
             // 
             // cbTipoEmpleado
             // 
@@ -512,8 +554,10 @@
             // btnVolver
             // 
             this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(86, 41);
+            this.btnVolver.Image = global::TamanOficio.Properties.Resources.Home;
+            this.btnVolver.Location = new System.Drawing.Point(36, 552);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(93, 41);
             this.btnVolver.TabIndex = 13;
             this.btnVolver.Text = "Volver";
             this.btnVolver.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -524,9 +568,10 @@
             // btnEliminar
             // 
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEliminar.Location = new System.Drawing.Point(36, 318);
+            this.btnEliminar.Image = global::TamanOficio.Properties.Resources.Delete;
+            this.btnEliminar.Location = new System.Drawing.Point(36, 260);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(86, 39);
+            this.btnEliminar.Size = new System.Drawing.Size(93, 39);
             this.btnEliminar.TabIndex = 12;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -537,9 +582,10 @@
             // btnNuevo
             // 
             this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnNuevo.Location = new System.Drawing.Point(36, 44);
+            this.btnNuevo.Image = global::TamanOficio.Properties.Resources.Add;
+            this.btnNuevo.Location = new System.Drawing.Point(36, 41);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(86, 41);
+            this.btnNuevo.Size = new System.Drawing.Size(93, 41);
             this.btnNuevo.TabIndex = 10;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -550,7 +596,8 @@
             // btnModificar
             // 
             this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-           this.btnModificar.Location = new System.Drawing.Point(36, 185);
+            this.btnModificar.Image = global::TamanOficio.Properties.Resources.Edit;
+            this.btnModificar.Location = new System.Drawing.Point(36, 155);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(93, 39);
             this.btnModificar.TabIndex = 11;
@@ -573,6 +620,7 @@
             // btnCancelar
             // 
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCancelar.Image = global::TamanOficio.Properties.Resources.Undo;
             this.btnCancelar.Location = new System.Drawing.Point(370, 21);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(91, 41);
@@ -586,6 +634,7 @@
             // btnAceptar
             // 
             this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAceptar.Image = global::TamanOficio.Properties.Resources.Floppy;
             this.btnAceptar.Location = new System.Drawing.Point(143, 21);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(86, 41);
@@ -595,45 +644,6 @@
             this.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
-            // 
-            // pbxFoto
-            // 
-            this.pbxFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxFoto.ErrorImage = null;
-             this.pbxFoto.InitialImage = null;
-            this.pbxFoto.Location = new System.Drawing.Point(412, 19);
-            this.pbxFoto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbxFoto.Name = "pbxFoto";
-            this.pbxFoto.Size = new System.Drawing.Size(164, 157);
-            this.pbxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxFoto.TabIndex = 29;
-            this.pbxFoto.TabStop = false;
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLimpiar.Location = new System.Drawing.Point(169, 155);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(86, 42);
-            this.btnLimpiar.TabIndex = 11;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBuscar.Location = new System.Drawing.Point(51, 155);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(86, 42);
-            this.btnBuscar.TabIndex = 10;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // ABMEmpleados
             // 
@@ -657,9 +667,9 @@
             this.gbxDetalle.PerformLayout();
             this.gbxDetalleOperaciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOperaciones)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).EndInit();
             this.gbxAcciones.ResumeLayout(false);
             this.gbxConfirmarAccion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).EndInit();
             this.ResumeLayout(false);
 
         }

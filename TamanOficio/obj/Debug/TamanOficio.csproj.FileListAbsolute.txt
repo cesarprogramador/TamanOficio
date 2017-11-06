@@ -13,3 +13,6 @@ D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\bin\Debug
 D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\bin\Debug\TamanOficio.pdb
 D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.exe
 D:\Fenix\Documents\Visual Studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.pdb
+d:\fenix\documents\visual studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.csprojResolveAssemblyReference.cache
+d:\fenix\documents\visual studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.Menu.resources
+d:\fenix\documents\visual studio 2012\Projects\TamanOficio\TamanOficio\obj\Debug\TamanOficio.ABMProveedores.resources

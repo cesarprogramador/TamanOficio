@@ -99,9 +99,9 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivosToolStripMenuItem,
             this.aBMToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(6, 8);
+            this.menuStrip1.Location = new System.Drawing.Point(9, 8);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(113, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(205, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 

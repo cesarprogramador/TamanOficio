@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ABMSocios));
             this.label5 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -38,6 +39,8 @@
             this.txtCuil = new System.Windows.Forms.TextBox();
             this.gbxBuscador = new System.Windows.Forms.GroupBox();
             this.dgvSocios = new System.Windows.Forms.DataGridView();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.cbBusPuntos = new System.Windows.Forms.ComboBox();
             this.txtBusDni = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -59,6 +62,7 @@
             this.btnEliminarInsc = new System.Windows.Forms.Button();
             this.btnModificarInsc = new System.Windows.Forms.Button();
             this.btnNuevoInsc = new System.Windows.Forms.Button();
+            this.pbxFoto = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtDni = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -79,27 +83,24 @@
             this.gbxConfirmarAccion = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.pbxFoto = new System.Windows.Forms.PictureBox();
             this.gbxBuscador.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSocios)).BeginInit();
             this.gbxDetalle.SuspendLayout();
             this.gbxDetalleCursos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).BeginInit();
             this.gbxAcciones.SuspendLayout();
             this.gbxConfirmarAccion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(50, 99);
+            this.label5.Location = new System.Drawing.Point(58, 98);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Punto:";
+            this.label5.Text = "Aula:";
             // 
             // txtEmail
             // 
@@ -188,6 +189,34 @@
             this.dgvSocios.Size = new System.Drawing.Size(267, 416);
             this.dgvSocios.TabIndex = 12;
             this.dgvSocios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSocios_CellClick);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.Image")));
+            this.btnLimpiar.Location = new System.Drawing.Point(169, 128);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(86, 42);
+            this.btnLimpiar.TabIndex = 11;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.Location = new System.Drawing.Point(51, 128);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(86, 42);
+            this.btnBuscar.TabIndex = 10;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // cbBusPuntos
             // 
@@ -358,6 +387,7 @@
             this.gbxDetalleCursos.TabIndex = 30;
             this.gbxDetalleCursos.TabStop = false;
             this.gbxDetalleCursos.Text = "Inscripciones  a Cursos";
+            this.gbxDetalleCursos.Visible = false;
             // 
             // dgvCursos
             // 
@@ -407,6 +437,20 @@
             this.btnNuevoInsc.UseVisualStyleBackColor = true;
             this.btnNuevoInsc.Click += new System.EventHandler(this.btnNuevoInsc_Click);
             // 
+            // pbxFoto
+            // 
+            this.pbxFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbxFoto.ErrorImage = null;
+            this.pbxFoto.Image = ((System.Drawing.Image)(resources.GetObject("pbxFoto.Image")));
+            this.pbxFoto.InitialImage = null;
+            this.pbxFoto.Location = new System.Drawing.Point(412, 26);
+            this.pbxFoto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbxFoto.Name = "pbxFoto";
+            this.pbxFoto.Size = new System.Drawing.Size(164, 157);
+            this.pbxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxFoto.TabIndex = 29;
+            this.pbxFoto.TabStop = false;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -443,11 +487,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(359, 261);
+            this.label6.Location = new System.Drawing.Point(366, 260);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Punto:";
+            this.label6.Text = "Aula:";
             // 
             // txtFechaNac
             // 
@@ -522,11 +566,13 @@
             this.btnPagarCuota.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPagarCuota.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPagarCuota.UseVisualStyleBackColor = true;
+            this.btnPagarCuota.Visible = false;
             this.btnPagarCuota.Click += new System.EventHandler(this.btnPagarCuota_Click);
             // 
             // btnVolver
             // 
             this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnVolver.Image = ((System.Drawing.Image)(resources.GetObject("btnVolver.Image")));
             this.btnVolver.Location = new System.Drawing.Point(24, 552);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(86, 41);
@@ -540,9 +586,10 @@
             // btnEliminar
             // 
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEliminar.Location = new System.Drawing.Point(24, 256);
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.Location = new System.Drawing.Point(16, 256);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(86, 39);
+            this.btnEliminar.Size = new System.Drawing.Size(100, 39);
             this.btnEliminar.TabIndex = 12;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -553,9 +600,10 @@
             // btnNuevo
             // 
             this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnNuevo.Location = new System.Drawing.Point(24, 45);
+            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
+            this.btnNuevo.Location = new System.Drawing.Point(16, 44);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(86, 41);
+            this.btnNuevo.Size = new System.Drawing.Size(100, 41);
             this.btnNuevo.TabIndex = 10;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -566,9 +614,10 @@
             // btnModificar
             // 
             this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-             this.btnModificar.Location = new System.Drawing.Point(24, 147);
+            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
+            this.btnModificar.Location = new System.Drawing.Point(16, 147);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(86, 39);
+            this.btnModificar.Size = new System.Drawing.Size(100, 39);
             this.btnModificar.TabIndex = 11;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -589,6 +638,7 @@
             // btnCancelar
             // 
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.Location = new System.Drawing.Point(370, 21);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(89, 41);
@@ -602,6 +652,7 @@
             // btnAceptar
             // 
             this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
             this.btnAceptar.Location = new System.Drawing.Point(143, 21);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(86, 41);
@@ -611,45 +662,6 @@
             this.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLimpiar.Location = new System.Drawing.Point(169, 128);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(86, 42);
-            this.btnLimpiar.TabIndex = 11;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBuscar.Location = new System.Drawing.Point(51, 128);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(86, 42);
-            this.btnBuscar.TabIndex = 10;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // pbxFoto
-            // 
-            this.pbxFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbxFoto.ErrorImage = null;
-             this.pbxFoto.InitialImage = null;
-            this.pbxFoto.Location = new System.Drawing.Point(412, 26);
-            this.pbxFoto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbxFoto.Name = "pbxFoto";
-            this.pbxFoto.Size = new System.Drawing.Size(164, 157);
-            this.pbxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxFoto.TabIndex = 29;
-            this.pbxFoto.TabStop = false;
             // 
             // ABMSocios
             // 
@@ -673,9 +685,9 @@
             this.gbxDetalle.PerformLayout();
             this.gbxDetalleCursos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).EndInit();
             this.gbxAcciones.ResumeLayout(false);
             this.gbxConfirmarAccion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).EndInit();
             this.ResumeLayout(false);
 
         }

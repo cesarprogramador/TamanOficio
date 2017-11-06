@@ -48,6 +48,8 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gbxOperaciones = new System.Windows.Forms.GroupBox();
+            this.btnVerFactura = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.txtMontoDeuda = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtAlumnoPaga = new System.Windows.Forms.TextBox();
@@ -63,8 +65,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtFechaPago = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnVerFactura = new System.Windows.Forms.Button();
-            this.btnAceptar = new System.Windows.Forms.Button();
             this.gbxHistorialCuotas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorialCuotas)).BeginInit();
             this.gbxDetalleAlumno.SuspendLayout();
@@ -177,11 +177,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(294, 22);
+            this.label5.Location = new System.Drawing.Point(304, 22);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Punto:";
+            this.label5.Text = "Aula:";
             // 
             // txtEmail
             // 
@@ -272,6 +272,32 @@
             this.gbxOperaciones.TabIndex = 2;
             this.gbxOperaciones.TabStop = false;
             this.gbxOperaciones.Text = "Detalle del alumno seleccionado";
+            // 
+            // btnVerFactura
+            // 
+            this.btnVerFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnVerFactura.Location = new System.Drawing.Point(87, 163);
+            this.btnVerFactura.Name = "btnVerFactura";
+            this.btnVerFactura.Size = new System.Drawing.Size(96, 41);
+            this.btnVerFactura.TabIndex = 27;
+            this.btnVerFactura.Text = "Ver factura";
+            this.btnVerFactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVerFactura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVerFactura.UseVisualStyleBackColor = true;
+            this.btnVerFactura.Click += new System.EventHandler(this.btnVerFactura_Click);
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAceptar.Location = new System.Drawing.Point(323, 163);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(110, 41);
+            this.btnAceptar.TabIndex = 26;
+            this.btnAceptar.Text = "Cobrar cuota";
+            this.btnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // txtMontoDeuda
             // 
@@ -409,31 +435,6 @@
             this.label9.Size = new System.Drawing.Size(85, 13);
             this.label9.TabIndex = 2;
             this.label9.Text = "Fecha de carga:";
-            // 
-            // btnVerFactura
-            // 
-            this.btnVerFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnVerFactura.Name = "btnVerFactura";
-            this.btnVerFactura.Size = new System.Drawing.Size(96, 41);
-            this.btnVerFactura.TabIndex = 27;
-            this.btnVerFactura.Text = "Ver factura";
-            this.btnVerFactura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVerFactura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVerFactura.UseVisualStyleBackColor = true;
-            this.btnVerFactura.Click += new System.EventHandler(this.btnVerFactura_Click);
-            // 
-            // btnAceptar
-            // 
-            this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAceptar.Location = new System.Drawing.Point(323, 163);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(110, 41);
-            this.btnAceptar.TabIndex = 26;
-            this.btnAceptar.Text = "Cobrar cuota";
-            this.btnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // ABMCuotas
             // 

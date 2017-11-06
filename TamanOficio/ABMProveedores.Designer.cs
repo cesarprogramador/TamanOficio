@@ -40,8 +40,6 @@
             this.txtBusNombreContacto = new System.Windows.Forms.TextBox();
             this.txtBusApellidoContacto = new System.Windows.Forms.TextBox();
             this.dgvProveedores = new System.Windows.Forms.DataGridView();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBusCuit = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -78,6 +76,8 @@
             this.gbxConfirmarAccion = new System.Windows.Forms.GroupBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.gbxBuscador.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).BeginInit();
             this.gbxDetalle.SuspendLayout();
@@ -196,32 +196,6 @@
             this.dgvProveedores.Size = new System.Drawing.Size(267, 367);
             this.dgvProveedores.TabIndex = 12;
             this.dgvProveedores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProveedores_CellClick);
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLimpiar.Location = new System.Drawing.Point(171, 128);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(86, 42);
-            this.btnLimpiar.TabIndex = 11;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBuscar.Location = new System.Drawing.Point(53, 128);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(86, 42);
-            this.btnBuscar.TabIndex = 10;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // label4
             // 
@@ -496,9 +470,10 @@
             // btnVolver
             // 
             this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnVolver.Image = global::TamanOficio.Properties.Resources.Home;
             this.btnVolver.Location = new System.Drawing.Point(36, 509);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(86, 41);
+            this.btnVolver.Size = new System.Drawing.Size(99, 41);
             this.btnVolver.TabIndex = 13;
             this.btnVolver.Text = "Volver";
             this.btnVolver.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -509,9 +484,10 @@
             // btnEliminar
             // 
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEliminar.Location = new System.Drawing.Point(36, 318);
+            this.btnEliminar.Image = global::TamanOficio.Properties.Resources.Delete;
+            this.btnEliminar.Location = new System.Drawing.Point(36, 319);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(86, 39);
+            this.btnEliminar.Size = new System.Drawing.Size(99, 39);
             this.btnEliminar.TabIndex = 12;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -522,9 +498,10 @@
             // btnNuevo
             // 
             this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnNuevo.Location = new System.Drawing.Point(36, 44);
+            this.btnNuevo.Image = global::TamanOficio.Properties.Resources.Add;
+            this.btnNuevo.Location = new System.Drawing.Point(36, 36);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(86, 41);
+            this.btnNuevo.Size = new System.Drawing.Size(99, 41);
             this.btnNuevo.TabIndex = 10;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -535,9 +512,10 @@
             // btnModificar
             // 
             this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnModificar.Location = new System.Drawing.Point(36, 185);
+            this.btnModificar.Image = global::TamanOficio.Properties.Resources.Edit;
+            this.btnModificar.Location = new System.Drawing.Point(36, 180);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(86, 39);
+            this.btnModificar.Size = new System.Drawing.Size(99, 39);
             this.btnModificar.TabIndex = 11;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -558,9 +536,10 @@
             // btnCancelar
             // 
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnCancelar.Location = new System.Drawing.Point(220, 21);
+            this.btnCancelar.Image = global::TamanOficio.Properties.Resources.Undo;
+            this.btnCancelar.Location = new System.Drawing.Point(216, 21);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(86, 41);
+            this.btnCancelar.Size = new System.Drawing.Size(90, 41);
             this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -571,6 +550,7 @@
             // btnAceptar
             // 
             this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAceptar.Image = global::TamanOficio.Properties.Resources.Floppy;
             this.btnAceptar.Location = new System.Drawing.Point(26, 21);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(86, 41);
@@ -580,6 +560,34 @@
             this.btnAceptar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLimpiar.Image = global::TamanOficio.Properties.Resources.Refresh;
+            this.btnLimpiar.Location = new System.Drawing.Point(171, 128);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(86, 42);
+            this.btnLimpiar.TabIndex = 11;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnBuscar.Image = global::TamanOficio.Properties.Resources.Search;
+            this.btnBuscar.Location = new System.Drawing.Point(53, 128);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(86, 42);
+            this.btnBuscar.TabIndex = 10;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // ABMProveedores
             // 

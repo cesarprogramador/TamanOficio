@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ABMProfesores));
             this.gbxDetalleCursos = new System.Windows.Forms.GroupBox();
             this.dgvCursos = new System.Windows.Forms.DataGridView();
             this.txtDpto = new System.Windows.Forms.TextBox();
@@ -194,9 +195,10 @@
             // btnVolver
             // 
             this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnVolver.Location = new System.Drawing.Point(36, 552);
+            this.btnVolver.Image = ((System.Drawing.Image)(resources.GetObject("btnVolver.Image")));
+            this.btnVolver.Location = new System.Drawing.Point(27, 552);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(86, 41);
+            this.btnVolver.Size = new System.Drawing.Size(95, 41);
             this.btnVolver.TabIndex = 13;
             this.btnVolver.Text = "Volver";
             this.btnVolver.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -207,9 +209,10 @@
             // btnEliminar
             // 
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEliminar.Location = new System.Drawing.Point(36, 318);
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.Location = new System.Drawing.Point(27, 318);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(86, 39);
+            this.btnEliminar.Size = new System.Drawing.Size(95, 39);
             this.btnEliminar.TabIndex = 12;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -220,9 +223,10 @@
             // btnNuevo
             // 
             this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-           this.btnNuevo.Location = new System.Drawing.Point(36, 44);
+            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
+            this.btnNuevo.Location = new System.Drawing.Point(27, 44);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(86, 41);
+            this.btnNuevo.Size = new System.Drawing.Size(95, 41);
             this.btnNuevo.TabIndex = 10;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -233,9 +237,10 @@
             // btnModificar
             // 
             this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnModificar.Location = new System.Drawing.Point(36, 185);
+            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
+            this.btnModificar.Location = new System.Drawing.Point(27, 185);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(97, 39);
+            this.btnModificar.Size = new System.Drawing.Size(95, 39);
             this.btnModificar.TabIndex = 11;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -256,6 +261,7 @@
             // btnCancelar
             // 
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.Location = new System.Drawing.Point(370, 21);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(95, 41);
@@ -269,7 +275,8 @@
             // btnAceptar
             // 
             this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-             this.btnAceptar.Location = new System.Drawing.Point(143, 21);
+            this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
+            this.btnAceptar.Location = new System.Drawing.Point(143, 21);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(86, 41);
             this.btnAceptar.TabIndex = 14;
@@ -383,11 +390,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(50, 126);
+            this.label5.Location = new System.Drawing.Point(57, 125);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 13);
+            this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Punto:";
+            this.label5.Text = "Aula:";
             // 
             // cbBusEspecialidad
             // 
@@ -422,6 +429,7 @@
             // btnLimpiar
             // 
             this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.Image")));
             this.btnLimpiar.Location = new System.Drawing.Point(169, 155);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(86, 42);
@@ -435,7 +443,8 @@
             // btnBuscar
             // 
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-           this.btnBuscar.Location = new System.Drawing.Point(51, 155);
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.Location = new System.Drawing.Point(51, 155);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(86, 42);
             this.btnBuscar.TabIndex = 10;
@@ -553,6 +562,7 @@
             // 
             this.pbxFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbxFoto.ErrorImage = null;
+            this.pbxFoto.Image = ((System.Drawing.Image)(resources.GetObject("pbxFoto.Image")));
             this.pbxFoto.InitialImage = null;
             this.pbxFoto.Location = new System.Drawing.Point(412, 19);
             this.pbxFoto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -565,11 +575,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(359, 268);
+            this.label6.Location = new System.Drawing.Point(366, 267);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Punto:";
+            this.label6.Text = "Aula:";
             // 
             // cbEspecialidad
             // 
